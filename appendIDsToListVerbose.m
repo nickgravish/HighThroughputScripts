@@ -1,5 +1,5 @@
 %% Code to append IDs to flight data
-cd('/Users/james/Dropbox/Work/Research/Bees/Bumblebees/Foraging experiments/Summer2014/data')
+%  cd('/Users/james/Dropbox/Work/Research/Bees/Bumblebees/Foraging experiments/Summer2014/data')
 %%
 %Currently recovers unique ID for ~2000 flights belonging to 235 different
 %bees
@@ -8,7 +8,7 @@ cd('/Users/james/Dropbox/Work/Research/Bees/Bumblebees/Foraging experiments/Summ
 % Paths will change
 
 %Load in flight data
-if ~isstruct('JamesList') %If JamesList is already loaded, don't load again
+if ~exist('JamesList') %If JamesList is already loaded, don't load again
     load('~/Dropbox/High Throughput Current/Data/JamesList.mat');
 end
 %Load in data from scale tracking

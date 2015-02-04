@@ -7,7 +7,7 @@
 
 
 %Load clean flight data
-if ~isstruct('JamesList') %If JamesList is already loaded, don't load again
+if ~exist('JamesList') %If JamesList is already loaded, don't load again
     load('~/Dropbox/High Throughput Current/Data/JamesList.mat');
 end
 
