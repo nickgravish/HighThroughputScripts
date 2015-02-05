@@ -58,9 +58,9 @@ for aa = 1:length(JamesList)
     
     if ~isempty(relCents.file) & (numel(unique(relCents.file)) == numel(relCents.file))
         % give opportunity to fill in major/minor information
-        JamesList(aa).area = pi*relCents(1,4).majAxis*relCents(1,5).minAxis;
+        JamesList(aa).scaleArea = pi*relCents(1,4).majAxis*relCents(1,5).minAxis;
     else
-        JamesList(aa).area = NaN;
+        JamesList(aa).scaleArea = NaN;
     end
     
     aa
